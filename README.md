@@ -20,6 +20,10 @@ a highly efficient and stable tabbar option which will allow you o add 5+ button
 Its very simple to use Panel Bar just change the button image and text according to your need, make changes in the tab bar view constraits to adjust height, and you are
 pretty well to go.
 
+# Live Demo 📹
+
+<img src = "https://user-images.githubusercontent.com/56252259/103139088-e1de1e80-46fe-11eb-8ffc-32b67ed3eb50.gif" width = 300, height = 600>
+
 # License ⚖️  
 
 MIT License<br> Please read the [License](https://github.com/gokulnair2001/Panel-Bar/blob/master/LICENSE) file for details.
