@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-dk-r8M">
+                                <rect key="frame" x="0.0" y="-8" width="414" height="814"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ei-aH-zIP">
+                                <rect key="frame" x="0.0" y="806" width="414" height="190"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="Cnf-Tw-7Fm">
+                                        <rect key="frame" x="20" y="10" width="374" height="70.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-Xx-DWJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="70.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-XE-DyE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="34.5"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="globe" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZP-aX-sDt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkh-ro-bKZ">
+                                                        <rect key="frame" x="0.0" y="37.5" width="44" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Data">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yas-tr-bBZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zqa-XP-PuH">
+                                                <rect key="frame" x="110" y="2.5" width="44" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5v-Qr-uz6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="wifi" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="wifiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Vq-50-SbK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BO5-K9-hdR">
+                                                        <rect key="frame" x="0.0" y="33" width="44" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Wifi">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="wifiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22S-dx-jRP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1pm-2P-WJb">
+                                                <rect key="frame" x="220" y="0.0" width="44" height="70.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXi-pT-QYc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="34.5"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="airplane" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="flightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npJ-YG-VMT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-HB-AF6">
+                                                        <rect key="frame" x="0.0" y="37.5" width="44" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Flight">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="flightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eB6-vK-SeP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-Rv-dx7">
+                                                <rect key="frame" x="330" y="1" width="44" height="68.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KP-nu-1og">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="32.5"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="arrow.uturn.up" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="moreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KLR-TD-UKr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMR-aV-lI2">
+                                                        <rect key="frame" x="0.0" y="35.5" width="44" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="More">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="moreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ev-aI-Js0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70.5" id="QxY-hc-6ik"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="PWF-IL-RJI">
+                                        <rect key="frame" x="20" y="100.5" width="374" height="70.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="I8p-UZ-2FA">
+                                                <rect key="frame" x="0.0" y="0.5" width="49.5" height="70"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTE-og-gie">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="34"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="airplayaudio" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="airDropButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uEu-jJ-Yg9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psI-Qg-uz9">
+                                                        <rect key="frame" x="0.0" y="37" width="49.5" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="AirPlay">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="airDropButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Kw-cg-lfD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-BK-dpq">
+                                                <rect key="frame" x="108.5" y="2.5" width="49" height="65.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa3-IE-l51">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="29.5"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="personalhotspot" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="phButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jD2-L5-lX1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaJ-qY-dM0">
+                                                        <rect key="frame" x="0.0" y="32.5" width="49" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="PH">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="phButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="luj-p7-CkB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Fyv-CA-dvU">
+                                                <rect key="frame" x="216.5" y="0.5" width="49.5" height="69.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-Tw-95k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="33.5"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="faceid" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="idButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFr-HG-gvs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-db-Fku">
+                                                        <rect key="frame" x="0.0" y="36.5" width="49.5" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="ID">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="idButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nU-QY-PSL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-sO-6Bw">
+                                                <rect key="frame" x="325" y="0.5" width="49" height="69.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x80-Hx-YvW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="33.5"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="moon.fill" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O6W-wG-q5r"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnr-Sh-mgI">
+                                                        <rect key="frame" x="0.0" y="36.5" width="49" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="DN">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="weN-pl-hyr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70.5" id="HgD-6T-Pvr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.89827046170000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Cnf-Tw-7Fm" firstAttribute="leading" secondItem="8Ei-aH-zIP" secondAttribute="leading" constant="20" id="5gw-ue-bOW"/>
+                                    <constraint firstItem="PWF-IL-RJI" firstAttribute="leading" secondItem="8Ei-aH-zIP" secondAttribute="leading" constant="20" id="EFK-Ni-TSw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cnf-Tw-7Fm" secondAttribute="trailing" constant="20" id="GAL-TF-fhN"/>
+                                    <constraint firstAttribute="height" constant="190" id="Ky7-cG-dYA"/>
+                                    <constraint firstItem="PWF-IL-RJI" firstAttribute="top" secondItem="Cnf-Tw-7Fm" secondAttribute="bottom" constant="20" id="U2b-xx-hVy"/>
+                                    <constraint firstAttribute="trailing" secondItem="PWF-IL-RJI" secondAttribute="trailing" constant="20" id="aTW-ch-9pZ"/>
+                                    <constraint firstItem="Cnf-Tw-7Fm" firstAttribute="top" secondItem="8Ei-aH-zIP" secondAttribute="top" constant="10" id="byr-nN-BJj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ei-aH-zIP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Vb-HU-L7j"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ei-aH-zIP" secondAttribute="bottom" constant="-100" id="AgN-90-nTA"/>
+                            <constraint firstItem="3c6-dk-r8M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-52" id="B5J-ff-VwQ"/>
+                            <constraint firstItem="8Ei-aH-zIP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PLo-YO-zz1"/>
+                            <constraint firstItem="8Ei-aH-zIP" firstAttribute="top" secondItem="3c6-dk-r8M" secondAttribute="bottom" id="SzW-Ss-rCf"/>
+                            <constraint firstItem="3c6-dk-r8M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YC9-LL-fjx"/>
+                            <constraint firstItem="3c6-dk-r8M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rYI-Wx-loq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DNBtn" destination="x80-Hx-YvW" id="jHO-ww-yN2"/>
+                        <outlet property="DNBtnTxt" destination="mnr-Sh-mgI" id="yRx-WE-g5G"/>
+                        <outlet property="airBtn" destination="uTE-og-gie" id="0S7-5d-9fP"/>
+                        <outlet property="airBtnTxt" destination="psI-Qg-uz9" id="v9C-Ec-aGz"/>
+                        <outlet property="containerView" destination="3c6-dk-r8M" id="OXi-DC-C6t"/>
+                        <outlet property="dataBtn" destination="mbv-XE-DyE" id="5pw-7f-yFY"/>
+                        <outlet property="dataBtnTxt" destination="vkh-ro-bKZ" id="dhL-3y-GDo"/>
+                        <outlet property="flightBtn" destination="KXi-pT-QYc" id="Rtc-dS-NhH"/>
+                        <outlet property="flightBtnTxt" destination="ThV-HB-AF6" id="cJS-5n-4Ap"/>
+                        <outlet property="idBtn" destination="Go5-Tw-95k" id="61A-nY-XHA"/>
+                        <outlet property="idBtnTxt" destination="8JF-db-Fku" id="Jf7-7u-hzN"/>
+                        <outlet property="moreBtn" destination="0KP-nu-1og" id="QV9-ZV-X2S"/>
+                        <outlet property="moreBtnText" destination="NMR-aV-lI2" id="8u3-gc-dKV"/>
+                        <outlet property="phBtn" destination="Oa3-IE-l51" id="njj-fo-f6F"/>
+                        <outlet property="phBtnTxt" destination="qaJ-qY-dM0" id="epK-4N-WnS"/>
+                        <outlet property="tabBarConstraints" destination="AgN-90-nTA" id="rLf-XD-sG4"/>
+                        <outlet property="wifiBtn" destination="X5v-Qr-uz6" id="mfu-eG-rHY"/>
+                        <outlet property="wifiBtnTxt" destination="BO5-K9-hdR" id="HzV-6Q-gle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340.57971014492756" y="101.78571428571428"/>
+        </scene>
+        <!--Wifi View Controller-->
+        <scene sceneID="v0L-eH-LAI">
+            <objects>
+                <viewController storyboardIdentifier="wifiViewController" id="SM2-ik-9Hk" customClass="wifiViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7G-eV-gr3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YrF-mY-MMO">
+                                <rect key="frame" x="20" y="275" width="374" height="346"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="bO6-d8-BFJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Av3-jT-bMQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Av3-jT-bMQ" firstAttribute="trailing" secondItem="YrF-mY-MMO" secondAttribute="trailing" constant="20" id="0We-jX-8c4"/>
+                            <constraint firstItem="YrF-mY-MMO" firstAttribute="centerY" secondItem="a7G-eV-gr3" secondAttribute="centerY" id="1Ok-xj-u8v"/>
+                            <constraint firstItem="YrF-mY-MMO" firstAttribute="leading" secondItem="Av3-jT-bMQ" secondAttribute="leading" constant="20" id="hEX-x6-tdl"/>
+                            <constraint firstItem="YrF-mY-MMO" firstAttribute="centerX" secondItem="a7G-eV-gr3" secondAttribute="centerX" id="ofE-0h-jcr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8D-Yj-ftz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-988" y="767"/>
+        </scene>
+        <!--Flight View Controller-->
+        <scene sceneID="26A-9j-XG2">
+            <objects>
+                <viewController storyboardIdentifier="flightViewController" id="1Pg-7l-lCR" customClass="flightViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JT7-KJ-BsO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kof-BB-Ela">
+                                <rect key="frame" x="20" y="273.5" width="374" height="349"/>
+                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="tv0-Kq-vGX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gw3-Bn-MJu"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kof-BB-Ela" firstAttribute="leading" secondItem="gw3-Bn-MJu" secondAttribute="leading" constant="20" id="WJ7-oJ-YKf"/>
+                            <constraint firstItem="Kof-BB-Ela" firstAttribute="centerY" secondItem="JT7-KJ-BsO" secondAttribute="centerY" id="bQp-qV-phh"/>
+                            <constraint firstItem="Kof-BB-Ela" firstAttribute="centerX" secondItem="JT7-KJ-BsO" secondAttribute="centerX" id="cLo-nE-dv8"/>
+                            <constraint firstItem="gw3-Bn-MJu" firstAttribute="trailing" secondItem="Kof-BB-Ela" secondAttribute="trailing" constant="20" id="iFU-ra-mjI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iut-Oj-IUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317" y="767"/>
+        </scene>
+        <!--Airdrop View Controller-->
+        <scene sceneID="OhR-rR-lP0">
+            <objects>
+                <viewController storyboardIdentifier="airdropViewController" id="6to-2V-BmY" customClass="airdropViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RU9-YX-JY6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplayaudio" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="M9F-dE-oQr">
+                                <rect key="frame" x="20" y="273" width="374" height="349"/>
+                                <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="arM-BY-xNj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cNs-tb-wtU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M9F-dE-oQr" firstAttribute="centerY" secondItem="RU9-YX-JY6" secondAttribute="centerY" id="3Za-TO-Pe7"/>
+                            <constraint firstItem="M9F-dE-oQr" firstAttribute="centerX" secondItem="RU9-YX-JY6" secondAttribute="centerX" id="E0d-bt-2Uv"/>
+                            <constraint firstItem="M9F-dE-oQr" firstAttribute="leading" secondItem="cNs-tb-wtU" secondAttribute="leading" constant="20" id="Jbo-5R-GYn"/>
+                            <constraint firstItem="cNs-tb-wtU" firstAttribute="trailing" secondItem="M9F-dE-oQr" secondAttribute="trailing" constant="20" id="Zkl-Wj-ZSG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsL-lf-AuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="767"/>
+        </scene>
+        <!--Ph View Controller-->
+        <scene sceneID="r2F-Ac-75z">
+            <objects>
+                <viewController storyboardIdentifier="phViewController" id="KYL-eW-ay9" customClass="phViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n2k-BU-Xo5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalhotspot" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bMq-t6-WLq">
+                                <rect key="frame" x="20" y="275" width="374" height="346"/>
+                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Be1-5e-k7I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gdX-dc-tuG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bMq-t6-WLq" firstAttribute="centerY" secondItem="n2k-BU-Xo5" secondAttribute="centerY" id="5XH-1j-19Q"/>
+                            <constraint firstItem="gdX-dc-tuG" firstAttribute="trailing" secondItem="bMq-t6-WLq" secondAttribute="trailing" constant="20" id="CZs-dt-eMD"/>
+                            <constraint firstItem="bMq-t6-WLq" firstAttribute="centerX" secondItem="n2k-BU-Xo5" secondAttribute="centerX" id="YVp-xu-kmS"/>
+                            <constraint firstItem="bMq-t6-WLq" firstAttribute="leading" secondItem="gdX-dc-tuG" secondAttribute="leading" constant="20" id="g5V-zs-Cjw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmW-mC-xOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="767"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="ZlL-bM-0Oy">
+            <objects>
+                <viewController storyboardIdentifier="dataViewController" id="1ja-La-PK7" customClass="dataViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZJv-GG-bxF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wUG-az-rX6">
+                                <rect key="frame" x="20" y="273.5" width="374" height="349"/>
+                                <color key="tintColor" red="1" green="0.45341497660000002" blue="0.18076923489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dTs-AX-WO3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wUG-az-rX6" firstAttribute="centerX" secondItem="ZJv-GG-bxF" secondAttribute="centerX" id="0Be-ec-20P"/>
+                            <constraint firstItem="wUG-az-rX6" firstAttribute="top" secondItem="dTs-AX-WO3" secondAttribute="top" constant="229" id="Bw0-5V-8iq"/>
+                            <constraint firstItem="wUG-az-rX6" firstAttribute="centerY" secondItem="ZJv-GG-bxF" secondAttribute="centerY" id="HDh-8e-mLI"/>
+                            <constraint firstItem="wUG-az-rX6" firstAttribute="leading" secondItem="ZJv-GG-bxF" secondAttribute="leadingMargin" id="iH6-9Z-3q8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jf-px-27N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1649.2753623188407" y="766.74107142857144"/>
+        </scene>
+        <!--FaceID View Controller-->
+        <scene sceneID="HVC-Lw-v9P">
+            <objects>
+                <viewController storyboardIdentifier="faceIDViewController" id="dNF-Ix-8Kc" customClass="faceIDViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWk-Nf-rQz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceid" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="15i-Ax-5hK">
+                                <rect key="frame" x="20" y="273.5" width="374" height="348.5"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="uL3-px-3yQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gFa-h6-awM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="15i-Ax-5hK" firstAttribute="leading" secondItem="gFa-h6-awM" secondAttribute="leading" constant="20" id="0sW-qe-koF"/>
+                            <constraint firstItem="gFa-h6-awM" firstAttribute="trailing" secondItem="15i-Ax-5hK" secondAttribute="trailing" constant="20" id="UjT-Wl-bXD"/>
+                            <constraint firstItem="15i-Ax-5hK" firstAttribute="centerY" secondItem="QWk-Nf-rQz" secondAttribute="centerY" id="lsG-Ts-Lrc"/>
+                            <constraint firstItem="15i-Ax-5hK" firstAttribute="centerX" secondItem="QWk-Nf-rQz" secondAttribute="centerX" id="vs8-Ft-ytT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmx-Vb-zqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696" y="767"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eYZ-Jg-8jF">
+            <objects>
+                <viewController storyboardIdentifier="DNViewController" id="mY7-uC-Joe" customClass="DNViewController" customModule="Panel_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TEX-xg-6sj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="r4r-rs-Xql">
+                                <rect key="frame" x="20" y="274" width="374" height="348.5"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="QiM-HK-OaE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rCG-yW-YIO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r4r-rs-Xql" firstAttribute="centerY" secondItem="TEX-xg-6sj" secondAttribute="centerY" id="66B-bu-9nF"/>
+                            <constraint firstItem="r4r-rs-Xql" firstAttribute="centerX" secondItem="TEX-xg-6sj" secondAttribute="centerX" id="h6l-49-uo6"/>
+                            <constraint firstItem="r4r-rs-Xql" firstAttribute="leading" secondItem="rCG-yW-YIO" secondAttribute="leading" constant="20" id="qb0-oi-pM8"/>
+                            <constraint firstItem="rCG-yW-YIO" firstAttribute="trailing" secondItem="r4r-rs-Xql" secondAttribute="trailing" constant="20" id="yIr-nt-zwb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSe-NA-3nb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407" y="767"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="airplayaudio" catalog="system" width="128" height="121"/>
+        <image name="arrow.uturn.up" catalog="system" width="128" height="118"/>
+        <image name="faceid" catalog="system" width="128" height="115"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="moon.fill" catalog="system" width="128" height="121"/>
+        <image name="personalhotspot" catalog="system" width="128" height="75"/>
+        <image name="wifi" catalog="system" width="128" height="91"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
