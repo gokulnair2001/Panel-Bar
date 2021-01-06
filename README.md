@@ -9,7 +9,7 @@
 ![badge](https://img.shields.io/badge/Platfrom-iOS-orange)
 
 # Motive ❤️ 
-There are times when you need to add more than the allowed number of buttons on the tab bar and still it should look the same, so during such cases we can use Panel Bar
+There are times when you need to add more than the allowed number of buttons on the tab bar and still it should look the same, so during such case we can use Panel Bar
 a highly efficient and stable tabbar option which will allow you o add 5+ buttons on the tab bar and still it will look the same.
 
 # Snapshots 📸 
